@@ -708,6 +708,24 @@ h3.hello span {
   margin-left: 15px;
   margin-right: 15px;
 }
+/* style val */
+
+.contact .contact-form .form-item .form-control .input-control input:focus {
+  outline: 0;
+}
+.contact .contact-form .form-item .form-control .input-control.success input {
+  border-color: #09c372;
+}
+
+.contact .contact-form .form-item .form-control .input-control.error input {
+  border-color: #ff3860;
+}
+
+.contact .contact-form .form-item .form-control .input-control .error {
+  color: #ff3860;
+  font-size: 19px;
+  height: 13px;
+}
 
 /* footer */
 footer {
@@ -746,7 +764,7 @@ footer .credit {
   padding: 1rem;
   padding-top: 2.5rem;
   font-size: 2rem;
-  background: var(--bg-black-100);
+  /* background: var(--bg-black-100); */
   color: var(--text-black--900);
 }
 

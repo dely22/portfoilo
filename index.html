@@ -9,9 +9,21 @@
 
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dark.css" />
     <title>hadeel-porto</title>
   </head>
   <body>
+
+    <!--	Theme swicher -->
+   <div class="swicher">
+    <input type="checkbox" class="checkbox" id="checkbox">
+      <label  for="checkbox" class="label">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
     <!--   Aside Start   -->
     <aside class="aside">
       <div class="logo">
@@ -52,7 +64,7 @@
                 I' m a <span class="typing">web designer</span>
               </h3>
               <p>
-                Hello guys, I'm Hadeel Jamil, an IT graduate, and a web designer. I ware pleased that you visited me here, I hope you like my portfolio, I will work to make it more beautiful, so remember to visit it again, please send me any suggestions in my email, you will find it in the access section at the bottom of the page. Thank you.
+                Hello guys, I'm an IT graduate, and a web designer. I ware pleased that you visited me here, I hope you like my portfolio, I will work to make it more beautiful, so remember to visit it again, please send me any suggestions in my email, you will find it in the access section at the bottom of the page. Thank you.
               </p>
               
               <a href="#" class="btn">Download CV</a>
@@ -410,48 +422,41 @@
               I'M VERY RESPONSIVE TO MESSAGES
             </h4>
           </div>
-          <div class="row">
+          <div class="row" id="form">
             <div class="contact-form padd-15">
               <div class="row">
                 <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Name"
-                    />
+                  <div class="input-control">
+                    <input id="username" name="username" type="text"  class="form-control"
+         placeholder="Name"/>
+                    <div class="error"></div>
                   </div>
                 </div>
                 <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Email"
-                    />
+                  <div class="input-control">
+                    <input id="email" name="email" type="text" class="form-control" placeholder="Email" />
+                  <div class="error"></div>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Subject"
-                    />
+                  <div class="input-control">
+                    <input id="subject" name="subject" type="text" class="form-control"
+                    placeholder="Subject"/>
+                    <div class="error"></div>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
-                  <div class="form-group">
+                  <div class="input-control">
                     <textarea
-                      name=""
-                      class="form-control"
-                      id=""
-                      placeholder="Message"
-                    ></textarea>
+                    id="textarea"
+                    name="textarea"
+                    placeholder="Message" class="form-control"
+                  ></textarea>
+                  <div class="error"></div>
                   </div>
                 </div>
               </div>
