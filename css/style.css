@@ -665,7 +665,7 @@ h3.hello span {
 
 .portfolio .box-container .box .image-container .big-image img {
   width: 100%;
-  height: 60vh;
+  height: 30vh;
   border-radius: 3rem;
   -o-border-image: var(--skin-color);
   border-image: var(--skin-color);
