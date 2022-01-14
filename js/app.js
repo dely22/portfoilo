@@ -98,3 +98,10 @@ const validateInputs = () => {
     setSuccess(textar);
   }
 };
+
+//	Image effect
+document.querySelectorAll('.small-image-2').forEach(images => {
+    images.onclick = () => {
+        document.querySelector('.big-image-2').src = images.getAttribute('src');
+    }
+});
